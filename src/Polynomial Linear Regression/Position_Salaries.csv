@@ -1,0 +1,49 @@
+Position,Level,Salary
+Intern,0.5,30000
+Trainee,0.75,35000
+Business Analyst,1,45000
+Junior Consultant,2,50000
+Consultant,2.5,55000
+Senior Consultant,3,60000
+Lead Consultant,3.5,70000
+Manager,4,80000
+Senior Manager,4.5,95000
+Country Manager,5,110000
+Associate Director,5.5,125000
+Region Manager,6,150000
+Senior Region Manager,6.5,175000
+Partner,7,200000
+Associate Partner,7.5,230000
+Senior Partner,8,300000
+Executive Director,8.5,375000
+C-level,9,500000
+Deputy CEO,9.5,750000
+CEO,10,1000000
+Board Member,10.5,1200000
+Vice Chairman,11,1500000
+Chairman,11.5,1800000
+Industry Advisor,12,2200000
+Business Owner,12.5,2600000
+Investor,13,3000000
+Angel Investor,13.5,3500000
+Venture Capitalist,14,4000000
+Private Equity Partner,14.5,5000000
+Hedge Fund Manager,15,6000000
+Investment Banker,15.5,7000000
+Philanthropist,16,8000000
+Entrepreneur,16.5,9000000
+Tech Founder,17,10000000
+Unicorn Founder,17.5,12000000
+Billionaire CEO,18,14000000
+Wealthy Investor,18.5,16000000
+Global Business Leader,19,18000000
+Corporate Titan,19.5,20000000
+Financial Mogul,20,25000000
+Tech Mogul,20.5,30000000
+Business Legend,21,35000000
+Empire Builder,21.5,40000000
+Elite Investor,22,50000000
+World Influencer,22.5,60000000
+Top 1% Entrepreneur,23,75000000
+Forbes Billionaire,23.5,100000000
+Global Icon,24,120000000
