@@ -200,12 +200,7 @@ print("To Dict", df.to_dict(), "\n")
 
 
 df = pd.DataFrame(
-    [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-        [pd.NA, pd.NA, 213]
-    ],
+    [[1, 2, 3], [4, 5, 6], [7, 8, 9], [pd.NA, pd.NA, 213]],
     # index=["Row 1", "Row 2", "Row 3"],
     columns=["Column I", "Column II", "Column III"],
 )
@@ -214,12 +209,18 @@ print(df, "\n")
 print(df.loc[0], "\n")
 print(df.iloc[0], "\n")
 print(df.iloc[0:1, 0:2], "\n")
-print(df.iloc[[1,2], [1,2]], "\n")
+print(df.iloc[[1, 2], [1, 2]], "\n")
 
-df.rename(columns={"Column I": "Col I", "Column II": "Col II", "Column III": "Col III"}, inplace=True)
+df.rename(
+    columns={"Column I": "Col I", "Column II": "Col II", "Column III": "Col III"},
+    inplace=True,
+)
 print(df, "\n")
 
-df.rename(columns={"Col I": "Column I", "Col II": "Column II", "Col III": "Column III"}, inplace=True)
+df.rename(
+    columns={"Col I": "Column I", "Col II": "Column II", "Col III": "Column III"},
+    inplace=True,
+)
 print(df, "\n")
 
 df.dropna(inplace=True)

@@ -8,7 +8,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import Normalizer, OneHotEncoder, StandardScaler
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 logging.basicConfig(level=logging.INFO)
@@ -58,13 +58,13 @@ class MultipleLinearRegression:
     def train(self, X: np.ndarray, y: np.ndarray) -> None:
         self.model.fit(X, y)
 
-
-    def split_data(self, X: np.ndarray, y: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    def split_data(
+        self, X: np.ndarray, y: np.ndarray
+    ) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
         return train_test_split(X, y, test_size=0.2, random_state=1997)
 
     def predict(self, X: np.ndarray) -> np.ndarray:
         return self.model.predict(X)
-        
 
     def plot_residuals(self, y_pred: np.ndarray, y_test: np.ndarray) -> None:
         residuals = y_test - y_pred
@@ -101,4 +101,3 @@ if __name__ == "__main__":
     model.evaluate_model(y_pred, y_test)
 
     # Backward Elimination
-        
